@@ -15,7 +15,17 @@
 
 <body>
     <aside>
-        {% include crumbs.html %}
+        <ul>
+            <li>
+                <a href="{{ site.url }}">~</a>
+                <ul>
+                    <li><a href="{{ '/blog/' | relative_url }}">..</a>
+                        <ul>
+                            <li>{{ page.title }}</li>
+                        </ul></li>
+                </ul>
+            </li>
+        </ul>
     </aside>
     <article>
         {{ content }}

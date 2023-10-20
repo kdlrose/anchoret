@@ -1,14 +1,19 @@
 <ul>
-    <li><a href="/">~</a></li>
-    <li>
-        <a href="{{ site.blog_path }}">{{ site.blog_path }}</a>
-        <ul>
-            {% for post in site.posts %}
-            <li>{{ post.date | date: "%F" }}: <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-            {% endfor %}
+    <li><a href="/">~</a>
+        <ul>   
+            <li>
+                <a href="{{ site.blog_path }}">{{ site.blog_path }}</a>
+                <ul>
+                    {% for post in site.posts limit:5 %}
+                    <li><a href="{{ post.url | relative_url }}">{{ post.date | date: "%F" }}: {{ post.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </li>
         </ul>
+        <ul>
+            {% for link in site.data.links %}
+            <li><a href="{{ link.URL }}">{{ link.name }}</a></li>
+            {% endfor %}
+        </ul>    
     </li>
-    {% for link in site.data.links %}
-    <li><a href="{{ link.URL }}">{{ link.name }}</a></li>
-    {% endfor %}
 </ul>

@@ -4,7 +4,7 @@ description: >-
   cell
 email: krdlrosa@gmail.com
 blog_path: blog
-permalink: /:categories/:title
+permalink: /post/:title
 
 # Build settings
 markdown: kramdown

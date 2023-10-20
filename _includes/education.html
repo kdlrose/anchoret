@@ -1,0 +1,9 @@
+<ul>
+    {% for school in site.data.schools %}
+        <li>
+            {{ school.years }}
+            <br>{{ school.degree }} {{ school.program }}
+            <br>{{ school.institution }}
+        </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,12 @@
+{% for job in site.data.jobs %}
+<ul>
+    <li>
+        {{ job.year }}
+        <br>{{ job.place }}, {{ job. title }}
+        {% if job.city %}<br>{{ job.city }}{% endif %}
+    </li>
+    <p>
+        {{ job.description }}
+    </p>
+</ul>
+{% endfor %}

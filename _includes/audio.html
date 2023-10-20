@@ -1,0 +1,10 @@
+<ul>
+{% for audio in site.data.audio %}
+    <li>
+        {{ audio.year }}
+        <br><em>{{ audio.title }}</em>, {{ audio.role }}{% if audio.note %} — {{ audio.note }}{% endif %}
+        {% if audio.company %}<br>{{ audio.company }}{% endif %}
+        {% if audio.city %}<br>{{ audio.city}}{% endif %}
+    </li>
+{% endfor %}
+</ul>

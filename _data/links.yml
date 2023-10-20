@@ -1,5 +1,5 @@
-- name: dotfiles
-  URL: /dotfiles/
-
 - name: CV
   URL: /cv/
+
+- name: dotfiles
+  URL: /dotfiles/
