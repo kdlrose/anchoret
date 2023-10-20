@@ -3,7 +3,7 @@
     <li>
         <a href="{{ site.blog_path }}">{{ site.blog_path }}</a>
         <ul>
-            {% for post in site.posts limit:5 %}
+            {% for post in site.posts %}
             <li>{{ post.date | date: "%F" }}: <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
             {% endfor %}
         </ul>
