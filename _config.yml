@@ -1,0 +1,14 @@
+title: kdlr
+url: https://sailorfe.github.io
+baseurl: /kdlr
+description: >-
+  cell
+email: krdlrosa@gmail.com
+blog_path: blog
+permalink: /:categories/:title
+
+# Build settings
+markdown: kramdown
+plugins:
+  - github-pages
+  - jekyll-feed

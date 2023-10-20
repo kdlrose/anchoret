@@ -1,0 +1,5 @@
+- name: dotfiles
+  URL: /dotfiles/
+
+- name: CV
+  URL: /cv/
