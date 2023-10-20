@@ -1,12 +1,19 @@
-<ul>
-    {% for project in site.data.projects %}
-    <li>
-        {% if project.link %}<a href="{{ project.link }}">{{ project.title }}</a>{% else %}{{ project.title }}{% endif %}, {{ project.year }}
-        <p>
-            {% if project.media %}
-            <em>{{ project.media }}</em>
-            {% endif %}
-            {{ project.description }}</p>
-    </li>
-    {% endfor %}
-</ul>
+<table>
+    <tr>
+        <td class="left"><h2>Projects</h2></td>
+        <td class="right">
+            <ul>
+                {% for project in site.data.projects %}
+                <li>
+                    {% if project.link %}<a href="{{ project.link }}">{{ project.title }}</a>{% else %}{{ project.title }}{% endif %}, {{ project.year }}
+                    <p>
+                        {% if project.media %}
+                        <em>{{ project.media }}</em>.
+                        {% endif %}
+                        {{ project.description }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </td>
+    </tr>
+</table>

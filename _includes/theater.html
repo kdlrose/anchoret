@@ -1,7 +1,14 @@
-<ul>
-    {% for credit in site.data.credits %}
-        <li>
-            {{ credit.year }}, {% if credit.role %}{{ credit.role }}, {% endif %}<em>{{ credit.title }}</em> by {{ credit.author }}, dir. {{ credit.director }}, {{ credit.theater }}
-        </li>
-    {% endfor %}
-</ul>
+<table>
+    <tr>
+        <td class="left"><h2>Selected Dramaturgy</h2></td>
+        <td class="right">
+            <ul>
+            {% for credit in site.data.credits %}
+                <li>
+                {{ credit.year }}, {% if credit.role %}{{ credit.role }}, {% endif %}<em>{{ credit.title }}</em> by {{ credit.author }}, dir. {{ credit.director }}, {{ credit.theater }}
+                </li>
+            {% endfor %}
+            </ul>
+        </td>
+    </tr>
+</table>

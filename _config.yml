@@ -5,6 +5,8 @@ description: >-
 email: krdlrosa@gmail.com
 blog_path: blog
 permalink: /post/:title
+author: "Kathryn de la Rosa"
+blurb: "b. 1997, Prestonsburg, Kentucky"
 
 # Build settings
 markdown: kramdown
