@@ -1,18 +1,11 @@
-<table>
-    <tr>
-        <td class="left"><h2>Work History</h2></td>
-        <td class="right">
-            <ul>
-            {% for job in site.data.jobs %}
-                <li>
-                    {{ job.year }}
-                    <br>{{ job.place }}
-                    <br>{{ job. title }}
-                    {% if job.city %}<br>{{ job.city }}{% endif %}
-                </li>
-                <p>{{ job.description }}</p>
-            {% endfor %}
-            </ul>
-        </td>
-    </tr>
-</table>
+<ul>
+    {% for job in site.data.jobs %}
+    <li>
+        {{ job.year }}
+        <br>{{ job.place }}
+        <br>{{ job. title }}
+        {% if job.city %}<br>{{ job.city }}{% endif %}
+    </li>
+    <p>{{ job.description }}</p>
+    {% endfor %}
+</ul>

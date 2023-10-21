@@ -1,6 +1,6 @@
 <ul>
     <li><a href="/">~</a>
-        <ul>   
+        <ul>
             <li>
                 <a href="{{ site.blog_path }}">{{ site.blog_path }}</a>
                 <ul>
@@ -11,9 +11,15 @@
             </li>
         </ul>
         <ul>
-            {% for link in site.data.links %}
-            <li><a href="{{ link.URL }}">{{ link.name }}</a></li>
-            {% endfor %}
+            <li><a href="cv">cv</a></li>
+            <li>
+                <a href="dotfiles">dotfiles</a>
+                <ul>
+                    <li>vim</li>
+                    <li>wezterm</li>
+                    <li>i3</li>
+                </ul>
+            </li>
         </ul>    
     </li>
 </ul>
