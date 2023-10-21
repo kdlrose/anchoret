@@ -15,15 +15,11 @@
 
 <body>
     <aside>
+        <h1><a href="/">~</a></h1>
         <ul>
-            <li>
-                <a href="{{ site.url }}">~</a>
+            <li><a href="{{ '/blog/' | relative_url }}">..</a>
                 <ul>
-                    <li><a href="{{ '/blog/' | relative_url }}">..</a>
-                        <ul>
-                            <li>{{ page.title }}</li>
-                        </ul>
-                    </li>
+                    <li>{{ page.title }}</li>
                 </ul>
             </li>
         </ul>
